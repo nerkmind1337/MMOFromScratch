@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using MMOFromScratch;
+using Silk.NET.Windowing;
 
-Console.WriteLine("Hello, World!");
+class Program()
+{
+    private static readonly WindowManager  _WindowManager = new();
+    static void Main(string[] args)
+    {
+        _WindowManager.CreateGameWindow();
+    }
+}
